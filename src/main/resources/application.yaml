@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/kong
+    username: kong
+    password: kong
+  data:
+    redis:
+      url: redis://localhost:6379
+      password: password123
+springdoc:
+  swagger-ui:
+    path: /docs
+    enabled: true
+  api-docs:
+    path: /info
+    enabled: true
+server:
+  port: 8081
+
